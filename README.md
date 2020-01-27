@@ -12,8 +12,8 @@ Software manufacturers tend to publish Security Advisories as soon as the softwa
 
 ### Current Manufacturer Support
 
-- Mozilla
-- Firefox
+- [Mozilla](https://www.mozilla.org/en-US/security/advisories/)
+- [Apple](https://support.apple.com/en-us/HT201222)
 
 ### Future Manufacturer Support
 
