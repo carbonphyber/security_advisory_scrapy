@@ -1,3 +1,4 @@
 .scrapy
 __pycache__
 *.pyc
+output/*

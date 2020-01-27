@@ -8,6 +8,26 @@ InfoSec professionals struggle to patch their software in a timely way. One of t
 
 Software manufacturers tend to publish Security Advisories as soon as the software patch is released, but the CVE databases tend to leave CVE entries embargoed until days or weeks after the information is timely. This project aims to patch gaps in CVE DB info with the manufacturer-supplied info.
 
+## Usage
+
+### Prerequisites
+
+This project depends on Python3 and several libraries which are upstream dependencies of Scrapy. Installing these is beyond the scope of this project.
+
+### Installation
+
+Assuming Python3 is installed, use this command to install the project Python dependencies:
+```
+pip3 install -r requirements.txt
+```
+
+### Running a spider
+
+Example command to run the `security_advisory_scrapy/spiders/apple_spider.py` and save the output to `output/apple.json`:
+```
+scrapy crawl apple -o output/apple.json
+```
+
 ## Sources
 
 ### Current Manufacturer Support
@@ -33,6 +53,7 @@ Please report other software manufacturers which either do not publish their sec
 Please file [a GitHub Issue](https://github.com/carbonphyber/security_advisory_scrapy/issues) with a hyperlink which describes how this project can automatically pull Security Advisory data.
 
 All manufacturers who require scraping of HTML from brittle and likely to change HTML templates are encouraged to supply JSON/XML feeds (with correct HTTP caching and tolerance for respectful automated fetching).
+
 
 ## How to Assist
 
